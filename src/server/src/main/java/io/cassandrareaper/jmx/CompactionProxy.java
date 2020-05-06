@@ -99,7 +99,7 @@ public final class CompactionProxy {
     try {
       return proxy.getPendingCompactions();
     } catch (JMException e) {
-      LOG.warn(String.format("Could not fetch pending compactions from %s", proxy.getHost()));
+      LOG.warn("Could not fetch pending compactions from {}", proxy.getHost(), e);
       return -1;
     }
   }
