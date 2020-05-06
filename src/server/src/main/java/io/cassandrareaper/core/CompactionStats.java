@@ -51,12 +51,12 @@ public final class CompactionStats {
 
     private Builder() {}
 
-    public Builder withPending(Integer pendingCompactions) {
+    public Builder withPendingCompactions(Integer pendingCompactions) {
       this.pendingCompactions = pendingCompactions;
       return this;
     }
 
-    public Builder withActive(List<Compaction> activeCompactions) {
+    public Builder withActiveCompactions(List<Compaction> activeCompactions) {
       this.activeCompactions = activeCompactions;
       return this;
     }
