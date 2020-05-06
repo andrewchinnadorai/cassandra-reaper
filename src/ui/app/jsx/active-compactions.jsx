@@ -54,6 +54,7 @@ const ActiveCompactions = CreateReactClass({
             });
           } catch(error) {
             this.component.setState({pendingCompactions:-1, activeCompactions: []});
+            console.error('Error occurred while retrieving compaction stats:', error);
           }
         },
         error: function(data) {
